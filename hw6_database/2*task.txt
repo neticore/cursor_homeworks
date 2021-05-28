@@ -1,0 +1,5 @@
+>> Select all users which have phones.
+
+
+SELECT users.* FROM users join phones ON users.id=phones.user_id
+
