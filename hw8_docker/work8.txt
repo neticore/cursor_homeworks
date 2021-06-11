@@ -1,0 +1,30 @@
+docker run -d -p 8080:8080 selfimg:teg1
+docker ps
+docker attach 8e
+docker inspect 8e
+docker logs 8e
+docker stop 8e
+docker build -t selfimg:new .
+docker run -t -p 8080:8080 selfimg:new
+docker stop a0
+
+
+docker run -it --name my_story ubuntu
+root@14b1826fbc83:/# run echo "Your story" > story.txt
+root@14b1826fbc83:/# echo "Your story" > story.txt
+root@14b1826fbc83:/# apt-get update && apt-get install cowsay
+root@14b1826fbc83:/# cat story.txt|/usr/games/cowsay
+ ____________
+< Your story >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+           #term2
+docker run -it --name my_story_2 ubuntu
+root@14b1826fbc83::/# ls
+root@14b1826fbc83::/# cat story.txt
+root@14b1826fbc83::/# cd usr/games/cowsay

@@ -15,7 +15,7 @@ def home():
 
 @app.route('/news')
 def newsp():
-    return "News PAge"
+    return "News Hello Andriy"
 
 
 if __name__ == "__main__":
